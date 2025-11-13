@@ -1,0 +1,25 @@
+{
+  "prompt": "swap 12 usdc for wsei with deadline 2 hours",
+  "events": [
+    {
+      "event": "message",
+      "data": "{\"type\":\"tool\",\"toolName\":\"place_order\",\"tool_output\":{\"transaction\":{\"address\":\"0xde737dB24548F8d41A4a3Ca2Bac8aaaDc4DBA099\",\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"exchange\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"srcToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"dstToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"srcAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"srcBidAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"dstMinAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint32\",\"name\":\"deadline\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"bidDelay\",\"type\":\"uint32\"},{\"internalType\":\"uint32\",\"name\":\"fillDelay\",\"type\":\"uint32\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct OrderLib.Ask\",\"name\":\"_ask\",\"type\":\"tuple\"}],\"name\":\"ask\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"functionName\":\"ask\",\"args\":[[\"0xf2F933FafbDB97062CfA3c447ff373e76A90Efd6\",\"0xe15fC38F6D8c56aF07bbCBe3BAf5708A2Bf42392\",\"0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7\",\"12000000\",\"12000000\",\"1\",\"1763036486\",\"60\",\"1980\",\"\"]]},\"metadata\":{\"types\":{\"address\":\"address\",\"args\":[\"address\",\"erc20\",\"erc20\",\"uint256\",\"uint256\",\"uint256\",\"Date\",\"Time\",\"Time\",\"uint256[]\"]},\"tokens\":{\"srcToken\":{\"symbol\":\"Unknown\",\"decimals\":6,\"formattedAmount\":\"12\"},\"destToken\":{\"symbol\":\"Unknown\",\"decimals\":18}},\"order\":{\"type\":\"MARKET_ORDER\",\"chunks\":1,\"fillDelay\":{\"unit\":60000,\"value\":35}}},\"id\":0},\"executionId\":\"f36aa64c-3c54-4c2f-ba84-5c67acd128bb\"}"
+    },
+    {
+      "event": "message",
+      "data": "{\"type\":\"token\",\"text\":\"An unsigned market order\"}"
+    },
+    {
+      "event": "message",
+      "data": "{\"type\":\"token\",\"text\":\" transaction to swap 12 USDC for WSEI with a deadline of \"}"
+    },
+    {
+      "event": "message",
+      "data": "{\"type\":\"token\",\"text\":\"2 hours has been prepared. Please sign and send it using your wallet.\"}"
+    },
+    {
+      "event": "end",
+      "data": "{}"
+    }
+  ]
+}

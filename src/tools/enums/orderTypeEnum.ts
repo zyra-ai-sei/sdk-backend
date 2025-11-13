@@ -1,0 +1,8 @@
+export enum OrderTypeEnum  {
+    DCA_MARKET_ORDER,
+    DCA_LIMIT_ORDER,
+    MARKET_ORDER,
+    LIMIT_ORDER,
+    SNIPER_DCA,
+    LIMIT_LADDER
+}

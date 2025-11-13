@@ -1,0 +1,1 @@
+export const SIGN_TXT= 'signature for sie_ai_chat_application: '
